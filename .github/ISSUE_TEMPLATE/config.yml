@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: qbitos-astro (upstream product)
+    url: https://github.com/qbitOS/qbitos-astro/issues
+    about: Astro app, build, and Erika UI — report here first
+  - name: uvspeed deployment docs
+    url: https://github.com/qbitOS/uvspeed/tree/main/docs/deployment
+    about: Cloudflare Worker and erika.qbitos.ai operator docs

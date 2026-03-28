@@ -1,0 +1,18 @@
+<!--
+Copyright (c) 2026 qbitOS / ugrad.ai. All rights reserved.
+SPDX-License-Identifier: Apache-2.0
+-->
+
+# qbitos{erika} Compliance Baseline
+
+## Compliance Root
+
+- Canonical policy: https://github.com/qbitOS/compliance
+
+## Runtime Path
+
+**[qbitOS/qbitos-astro](https://github.com/qbitOS/qbitos-astro)** builds the static site (Freya-parity / Codex / Iron Line hooks). This **qbitos-erika** repo holds **org alignment**, **CI**, and an optional **`site/`** mirror of **`dist/`** for **GitHub Pages** and **erika.qbitos.ai** (Cloudflare Worker → `PAGES_WEB_ORIGIN`).
+
+## Control Envelope
+
+`Upstream source of truth in qbitos-astro / no duplicate product forks here unless documented in UPSTREAM.md / approval gate per docs/deployment (Erika F.) when policy applies`

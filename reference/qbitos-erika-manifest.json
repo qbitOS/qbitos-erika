@@ -1,0 +1,21 @@
+{
+  "name": "qbitos-erika",
+  "displayName": "Erika (qbitOS static surface)",
+  "upstreamRepo": "https://github.com/qbitOS/qbitos-astro",
+  "upstreamBuildOutput": "dist",
+  "mirrorPath": "site",
+  "deployDocs": [
+    "https://github.com/qbitOS/uvspeed/blob/main/docs/deployment/erika-qbitos-astro-cloudflare.md",
+    "https://github.com/qbitOS/uvspeed/blob/main/docs/deployment/erika-qbitos-astro-launch.md"
+  ],
+  "cloudflareWorker": "https://github.com/qbitOS/uvspeed/blob/main/cloudflare/erika-qbitos-astro-worker.js",
+  "compliancePeers": [
+    "qbitos-freya",
+    "qbitos-iron-line",
+    "qbitos-gluelam",
+    "qbitos-gameHUB",
+    "qbitos-kbatch",
+    "mu.eee"
+  ],
+  "version": "1.0.0"
+}

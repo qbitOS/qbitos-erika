@@ -1,0 +1,23 @@
+name: Feature Request
+description: Propose a change to qbitos-erika docs, CI, or sync workflow
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Product / Astro** features belong in **[qbitOS/qbitos-astro](https://github.com/qbitOS/qbitos-astro)** first.
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+    validations:
+      required: false

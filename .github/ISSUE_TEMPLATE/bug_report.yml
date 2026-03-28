@@ -1,0 +1,30 @@
+name: Bug Report
+description: Error in this repo’s docs, site/ sync, or CI only
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For **Astro app** bugs, use **[qbitOS/qbitos-astro](https://github.com/qbitOS/qbitos-astro/issues)** unless this repo’s **`site/`** mirror or docs only.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - site/ sync or placeholder
+        - COMPLIANCE.qmd / NOTICES
+        - UPSTREAM.md / README
+        - GitHub Actions
+        - LICENSE / compliance copy
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
