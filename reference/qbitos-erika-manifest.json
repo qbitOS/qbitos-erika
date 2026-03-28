@@ -1,6 +1,9 @@
 {
   "name": "qbitos-erika",
   "displayName": "Erika (qbitOS static surface)",
+  "liveUrl": "https://erika.qbitos.ai",
+  "githubPagesUrl": "https://qbitos.github.io/qbitos-erika",
+  "mirrorRepo": "https://github.com/qbitOS/qbitos-erika",
   "upstreamRepo": "https://github.com/qbitOS/qbitos-astro",
   "upstreamBuildOutput": "dist",
   "mirrorPath": "site",

@@ -1,5 +1,7 @@
 # qbitOS — qbitos-erika (Erika surface)
 
+**Live:** **[https://erika.qbitos.ai](https://erika.qbitos.ai)** (Cloudflare Worker → GitHub Pages below) · **Repo:** **[github.com/qbitOS/qbitos-erika](https://github.com/qbitOS/qbitos-erika)** · **Pages:** **[qbitos.github.io/qbitos-erika](https://qbitos.github.io/qbitos-erika/)**
+
 **qbitos-erika** is the **compliance + CI + deploy reference** home for the **Erika** static site built from **[qbitOS/qbitos-astro](https://github.com/qbitOS/qbitos-astro)**. Canonical **application source** stays in the **Astro** repo; this repo tracks **org alignment** (same envelope as [qbitos-freya](https://github.com/qbitOS/qbitos-freya), [qbitos-iron-line](https://github.com/qbitOS/qbitos-iron-line), [qbitos-gluelam](https://github.com/qbitOS/qbitos-gluelam), [qbitos-gameHUB](https://github.com/qbitOS/qbitos-gameHUB), [mu.eee](https://github.com/qbitOS/mu.eee)) while **build output** is merged from **`qbitos-astro/dist/`** into **`site/`** for **GitHub Pages**.
 
 ## Upstream
@@ -12,14 +14,15 @@
 
 See **[UPSTREAM.md](UPSTREAM.md)** and **[docs/BUILD.md](docs/BUILD.md)** for merge and build.
 
-## Live: erika.qbitos.ai
+## Live: erika.qbitos.ai ↔ this repo
 
 | Step | Action |
 |------|--------|
-| Worker | [uvspeed `cloudflare/erika-qbitos-astro-worker.js`](https://github.com/qbitOS/uvspeed/blob/main/cloudflare/erika-qbitos-astro-worker.js) |
-| Env | `PAGES_WEB_ORIGIN` = `https://qbitos.github.io/qbitos-erika` (this repo **Pages**) or `https://qbitos.github.io/qbitos-astro` if Astro publishes there |
+| **Public URL** | **[https://erika.qbitos.ai](https://erika.qbitos.ai)** |
+| Worker | [uvspeed `cloudflare/erika-qbitos-astro-worker.js`](https://github.com/qbitOS/uvspeed/blob/main/cloudflare/erika-qbitos-astro-worker.js) (default **`PAGES_WEB_ORIGIN`** = **`https://qbitos.github.io/qbitos-erika`**) |
+| Env | Override only if Pages origin differs |
 | Route | `erika.qbitos.ai/*` |
-| DNS | CNAME **`erika`** on **`qbitos.ai`** |
+| DNS | CNAME **`erika`** on **`qbitos.ai`** (proxied) per org policy |
 
 **Operator checklist:** **[docs/DEPLOY-erika-qbitos.md](docs/DEPLOY-erika-qbitos.md)**
 

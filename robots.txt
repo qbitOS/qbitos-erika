@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Canonical live host: https://erika.qbitos.ai
 Sitemap: https://qbitos.github.io/qbitos-erika/sitemap.xml
